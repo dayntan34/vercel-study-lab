@@ -54,5 +54,11 @@
         </p>
       </div>
     </main>
+    <!-- Speed Insights still serves from the stable /_vercel path, so a plain
+         script tag works. Web Analytics does not: its script is served from a
+         per-project obfuscated path that the npm SDK reads from a build-time
+         env var, so a no-build static site cannot reference it. That is why
+         only Speed Insights reports data for this project. -->
+    <script defer src="/_vercel/speed-insights/script.js"></script>
   </body>
 </html>

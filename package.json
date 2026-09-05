@@ -1,0 +1,24 @@
+{
+  "name": "vercel-study-lab",
+  "version": "1.0.0",
+  "description": "Throwaway resources created to explore the Vercel dashboard UI. Everything here is designed to be torn down with `./teardown.sh`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayntan34/vercel-study-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dayntan34/vercel-study-lab/issues"
+  },
+  "homepage": "https://github.com/dayntan34/vercel-study-lab#readme",
+  "devDependencies": {
+    "playwright": "^1.57.0"
+  }
+}

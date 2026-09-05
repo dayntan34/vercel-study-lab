@@ -6,3 +6,7 @@ dist/
 .env.local
 *.log
 .DS_Store
+inventory.json
+pageviews.log
+traffic2.log
+package-lock.json
