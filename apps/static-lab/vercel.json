@@ -1,0 +1,16 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/docs", "destination": "/about", "permanent": false }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "x-study-lab", "value": "static-lab" },
+        { "key": "cache-control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}

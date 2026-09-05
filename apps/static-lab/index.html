@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>static-lab — Vercel Study Lab</title>
+    <style>
+      :root { color-scheme: dark; }
+      body {
+        font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
+        background: #0a0a0a; color: #ededed; margin: 0;
+      }
+      main { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+      h1 { font-size: 24px; margin: 0 0 4px; }
+      .sub { color: #a1a1a1; font-size: 14px; margin: 0 0 28px; }
+      .card {
+        border: 1px solid #262626; border-radius: 10px;
+        padding: 18px 20px; margin-bottom: 14px; background: #111;
+      }
+      code { background: #1c1c1c; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+      a { color: #3b82f6; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>static-lab</h1>
+      <p class="sub">Vercel Study Lab · zero-config static site</p>
+
+      <div class="card">
+        <strong>No build step</strong>
+        <p>
+          There is no framework and no build command here. Vercel serves these
+          files straight from its edge network, so the deployment view shows a
+          near-instant build and a pure static output.
+        </p>
+      </div>
+
+      <div class="card">
+        <strong>What to look at in the dashboard</strong>
+        <p>
+          Compare this project's <em>Deployment Summary</em> against
+          <code>next-lab</code>: no functions, no middleware, no cache
+          revalidation. Just static assets.
+        </p>
+      </div>
+
+      <div class="card">
+        <strong>Routing</strong>
+        <p>
+          <a href="/about.html">/about.html</a> ·
+          <a href="/about">/about</a> (clean URL) ·
+          <a href="/docs">/docs</a> (redirect) ·
+          <a href="/nope">/nope</a> (custom 404)
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

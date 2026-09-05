@@ -1,0 +1,24 @@
+{
+  "functions": {
+    "api/heavy.js": {
+      "memory": 2048,
+      "maxDuration": 60
+    },
+    "api/status.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "x-study-lab", "value": "api-lab" },
+        { "key": "access-control-allow-origin", "value": "*" }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/health", "destination": "/api/status" }
+  ]
+}
