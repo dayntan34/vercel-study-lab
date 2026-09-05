@@ -1,5 +1,6 @@
 const ROUTES = [
   ['/isr', 'Incrementally regenerated page (revalidate: 60)'],
+  ['/flags', 'Reads feature flags from the Edge Config store'],
   ['/dynamic', 'Force-dynamic server render, runs per request'],
   ['/api/hello', 'Node.js serverless function'],
   ['/api/edge', 'Edge runtime function'],
